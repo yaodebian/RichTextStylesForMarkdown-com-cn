@@ -2,9 +2,9 @@
 
 #nice {
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", system-ui, sans-serif;
-  color: #444;
-  font-size: 16px;
+  font-family: PingFang SC, system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Arial, sans-serif;
+  color: #3a3632;
+  font-size: 18px;
   line-height: 1.9;
   letter-spacing: 0.2px;
   word-break: break-word;
@@ -66,19 +66,19 @@
 
 /* 引用块 */
 #nice blockquote {
-  margin: 24px 0;
-  padding: 20px 22px;
-  background: #f6f8f9;
-  border: none;
-  border-radius: 10px;
+  margin: 10px 0;
+  padding: 15px 15px;
+  background-color: #ffffff;
+  border: 1px solid rgba(38,70,83,0.2);
+  border-radius: 5px;
   color: #264653;
 }
 
 #nice blockquote p {
-  margin: 0.6em 0;
   font-size: 1em;
-  line-height: 1.9;
-  font-weight: 600;
+  padding: 0;
+  line-height: 1.8;
+  font-weight: normal;
 }
 
 /* 列表 */
@@ -198,7 +198,7 @@
 /* 移动端 */
 @media screen and (max-width: 768px) {
   #nice {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.85;
   }
 
