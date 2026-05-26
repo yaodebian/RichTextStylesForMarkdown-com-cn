@@ -1,0 +1,225 @@
+/* --- 深流 (Deep Flow) · 面向深度阅读的 Markdown 排版样式 --- */
+
+#nice {
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", system-ui, sans-serif;
+  color: #444;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.2px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+/* 段落 */
+#nice p {
+  margin: 1em 0;
+  font-size: inherit;
+  line-height: 1.9;
+}
+
+/* 标题 */
+#nice h1,
+#nice h2,
+#nice h3,
+#nice h4 {
+  color: #264653;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+#nice h2 {
+  margin: 42px 0 22px;
+  font-size: 1.35em;
+  display: flex;
+  align-items: center;
+}
+
+#nice h2 strong:first-child {
+  display: inline-block;
+  background: #264653;
+  color: #fff !important;
+  font-size: 0.78em;
+  line-height: 1;
+  padding: 10px 11px;
+  border-radius: 8px;
+  margin-right: 12px;
+  font-weight: 700;
+}
+
+#nice h3 {
+  margin: 30px 0 14px;
+  font-size: 1.15em;
+}
+
+/* 强调 */
+#nice strong {
+  color: #264653;
+  font-weight: 700;
+}
+
+#nice em {
+  font-style: normal;
+  color: #264653;
+  font-weight: 600;
+}
+
+/* 引用块 */
+#nice blockquote {
+  margin: 24px 0;
+  padding: 20px 22px;
+  background: #f6f8f9;
+  border: none;
+  border-radius: 10px;
+  color: #264653;
+}
+
+#nice blockquote p {
+  margin: 0.6em 0;
+  font-size: 1em;
+  line-height: 1.9;
+  font-weight: 600;
+}
+
+/* 列表 */
+#nice ul,
+#nice ol {
+  margin: 16px 0;
+  padding-left: 1.4em;
+}
+
+#nice li {
+  margin: 10px 0;
+  line-height: 1.85;
+}
+
+#nice ul li::marker,
+#nice ol li::marker {
+  color: #264653;
+  font-weight: 700;
+}
+
+#nice li p {
+  margin: 0;
+}
+
+/* 图片 */
+#nice img {
+  max-width: 100%;
+  display: block;
+  margin: 28px auto;
+  border-radius: 10px;
+}
+
+/* 链接 */
+#nice a {
+  color: #264653;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(38, 70, 83, 0.28);
+}
+
+/* 行内代码 */
+#nice code {
+  background: #f6f8f9;
+  color: #264653;
+  padding: 2px 6px;
+  margin: 0 2px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  font-family: "SFMono-Regular", Consolas, Monaco, monospace;
+  word-break: break-all;
+}
+
+/* 代码块 */
+#nice pre {
+  position: relative;
+  margin: 24px 0;
+  padding: 18px;
+  background: #264653;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+#nice pre code {
+  display: block;
+  background: transparent !important;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.75;
+  font-family: "SFMono-Regular", Consolas, Monaco, monospace;
+  white-space: pre;
+  word-break: normal !important;
+  word-wrap: normal !important;
+}
+
+/* 表格 */
+#nice table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+#nice th {
+  background: #f6f8f9;
+  color: #264653;
+  font-weight: 700;
+}
+
+#nice th,
+#nice td {
+  border: 1px solid #e8ecef;
+  padding: 10px 12px;
+  line-height: 1.75;
+  text-align: left;
+}
+
+/* 分割线 */
+#nice hr {
+  border: none;
+  height: 1px;
+  margin: 38px 0;
+  background: linear-gradient(to right, transparent, #e8ecef, transparent);
+}
+
+/* 防止公众号样式污染 */
+#nice pre code,
+#nice pre span,
+#nice .hljs {
+  background: transparent !important;
+}
+
+#nice section {
+  margin: 0;
+  padding: 0;
+}
+
+/* 移动端 */
+@media screen and (max-width: 768px) {
+  #nice {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  #nice p {
+    line-height: 1.85;
+  }
+
+  #nice h2 {
+    font-size: 1.28em;
+    margin: 38px 0 20px;
+  }
+
+  #nice blockquote {
+    padding: 18px;
+  }
+
+  #nice pre code {
+    font-size: 12px;
+  }
+
+  #nice table {
+    font-size: 13px;
+  }
+}
