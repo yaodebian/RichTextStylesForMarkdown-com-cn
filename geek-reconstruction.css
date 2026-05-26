@@ -1,0 +1,292 @@
+/* --- 专业阅读橙 · 微信公众号 Markdown 排版样式 --- */
+
+#nice {
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", system-ui, sans-serif;
+  color: #333;
+  line-height: 1.75;
+  font-size: 16px;
+
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: justify;
+  letter-spacing: 0.2px;
+}
+
+/* -------------------- */
+/* 段落系统 */
+/* -------------------- */
+
+#nice p {
+  margin: 0.8em 0;
+  font-size: inherit;
+  line-height: 1.75;
+}
+
+/* -------------------- */
+/* 标题系统 */
+/* -------------------- */
+
+#nice h1,
+#nice h2,
+#nice h3,
+#nice h4 {
+  font-weight: 700;
+  color: #111;
+}
+
+#nice h2 {
+  margin: 30px 0 14px 0;
+  font-size: 1.3em;
+  line-height: 1.5;
+
+  border-left: 4px solid #ff3502;
+  padding-left: 12px;
+}
+
+#nice h3 {
+  margin: 24px 0 10px 0;
+  font-size: 1.12em;
+  line-height: 1.5;
+}
+
+/* -------------------- */
+/* 强调 */
+/* -------------------- */
+
+#nice strong {
+  color: #ff3502;
+  font-weight: 600;
+}
+
+#nice em {
+  font-style: italic;
+}
+
+/* -------------------- */
+/* 引用块 */
+/* -------------------- */
+
+#nice blockquote {
+  margin: 18px 0;
+  padding: 14px 16px;
+
+  background: rgba(255, 53, 2, 0.04);
+
+  border: 1px solid rgba(255, 53, 2, 0.1);
+  border-radius: 10px;
+
+  color: #555;
+}
+
+#nice blockquote p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* -------------------- */
+/* 列表系统 */
+/* -------------------- */
+
+#nice ul,
+#nice ol {
+  padding-left: 22px;
+  margin: 12px 0;
+}
+
+#nice li {
+  margin: 8px 0;
+  line-height: 1.75;
+}
+
+#nice li p {
+  margin: 0;
+}
+
+#nice ul li {
+  list-style: disc;
+}
+
+#nice ol li {
+  list-style: decimal;
+}
+
+/* -------------------- */
+/* 行内代码 */
+/* -------------------- */
+
+#nice code {
+  background: rgba(27, 31, 35, 0.05);
+  color: #1e6bb8;
+
+  padding: 2px 6px;
+  margin: 0 2px;
+
+  border-radius: 4px;
+
+  font-size: 13px;
+  font-family: "SFMono-Regular", Consolas, Monaco, monospace;
+
+  word-break: break-all;
+}
+
+/* -------------------- */
+/* 代码块（公众号稳定版） */
+/* -------------------- */
+
+#nice pre {
+  position: relative;
+
+  margin: 18px 0;
+  padding: 16px 16px 16px 16px;
+
+  background: #282c34;
+
+  border-radius: 10px;
+
+  overflow-x: auto;
+
+  box-sizing: border-box;
+}
+
+/* code 本体 */
+
+#nice pre code {
+  display: block;
+
+  background: transparent !important;
+  color: #abb2bf;
+
+  font-size: 13px;
+  line-height: 1.75;
+
+  font-family: "SFMono-Regular", Consolas, Monaco, monospace;
+
+  white-space: pre;
+
+  word-break: normal !important;
+  word-wrap: normal !important;
+}
+
+/* -------------------- */
+/* 图片 */
+/* -------------------- */
+
+#nice img {
+  max-width: 100%;
+  display: block;
+
+  margin: 18px auto;
+
+  border-radius: 8px;
+}
+
+/* -------------------- */
+/* 链接 */
+/* -------------------- */
+
+#nice a {
+  color: #576b95;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(87, 107, 149, 0.25);
+}
+
+#nice a:hover {
+  color: #ff3502;
+}
+
+/* -------------------- */
+/* 分隔线 */
+/* -------------------- */
+
+#nice hr {
+  border: none;
+
+  height: 1px;
+
+  margin: 32px 0;
+
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    #ddd,
+    transparent
+  );
+}
+
+/* -------------------- */
+/* 表格 */
+/* -------------------- */
+
+#nice table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin: 18px 0;
+
+  font-size: 14px;
+}
+
+#nice th {
+  background: #f7f7f7;
+
+  font-weight: 600;
+}
+
+#nice th,
+#nice td {
+  border: 1px solid #e5e5e5;
+
+  padding: 10px 12px;
+
+  line-height: 1.7;
+
+  text-align: left;
+}
+
+/* -------------------- */
+/* 防止公众号样式污染 */
+/* -------------------- */
+
+#nice pre code,
+#nice pre span {
+  background: transparent !important;
+}
+
+#nice section {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------- */
+/* 适配 markdown 编辑器 */
+/* -------------------- */
+
+#nice .hljs {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* -------------------- */
+/* 小屏优化 */
+/* -------------------- */
+
+@media screen and (max-width: 768px) {
+  #nice {
+    font-size: 15px;
+  }
+
+  #nice table {
+    font-size: 13px;
+  }
+
+  #nice pre {
+    padding: 40px 14px 14px 14px;
+  }
+
+  #nice pre code {
+    font-size: 12px;
+  }
+}
